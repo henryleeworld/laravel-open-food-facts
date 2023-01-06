@@ -8,7 +8,7 @@ class OpenFoodFactsController extends Controller
 {
     public function index()
     {
-        $openFood = OpenFoodFacts::find('Artisan Grilled Chicken');
+        $openFood = OpenFoodFacts::find('Artisan Grilled Chicken Pizza');
         return view('open-food', compact('openFood'));
     }
 }
