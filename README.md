@@ -1,4 +1,4 @@
-# Laravel 11 開放食物成份組織
+# Laravel 12 開放食物成份組織
 
 引入 openfoodfacts 的 openfoodfacts-laravel 套件來擴增取得開放食物成份組織資料，讓大家對於自己所食用過的食品更加了解，並在下一次選購時作為參考指標，如此不但能越來越能掌握那些常常讓人一頭霧水的化學添加物，也能將自己國家的食品與其他國家的食品做一個交流比較。
 
@@ -16,11 +16,15 @@ $ composer install
 ```sh
 $ php artisan key:generate
 ```
+- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移。
+```sh
+$ php artisan migrate
+```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/open-food-fact` 來進行開放食物成份組織資料取得。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/DYJAH00.png)
+![](https://i.imgur.com/J5nll73.png)
 > 獲取有關成分、食物添加劑和營養成分的資料
